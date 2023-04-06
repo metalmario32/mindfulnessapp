@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
 import Entries from "./Entries";
+import ShowSuggestion from "./ShowSuggestion";
 import "../App.css";
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
         <Col>
           <h2 className="Homepage-h2">Suggestion of The Day</h2>
         </Col>
+        <ShowSuggestion />
       </Row>
       <Row>
         <Col>

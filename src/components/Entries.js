@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Field, Form } from "formik";
-import { Col, Container, FormGroup } from "reactstrap";
+import { Button, Col, Container, FormGroup } from "reactstrap";
+import "../App.css";
 
 const Entries = () => {
   const handleSubmit = (values, { resetForm }) => {
@@ -66,6 +67,13 @@ const Entries = () => {
                 className="form-control"
               />
             </Col>
+            <FormGroup row>
+              <Col style={{ margin: "40px 0" }}>
+                <Button type="submit" color="primary" size="lg" active>
+                  Submit
+                </Button>
+              </Col>
+            </FormGroup>
           </FormGroup>
         </Form>
       </Formik>

@@ -3,8 +3,9 @@ import TopBar from "./components/TopBar";
 import Calendar from "./components/Calendar";
 import HomePage from "./components/HomePage";
 import { Route, Routes } from "react-router-dom";
-import  { Container } from "reactstrap";
-import './App.css';
+import { Container } from "reactstrap";
+import "./App.css";
+
 export default function App() {
   return (
     <>
