@@ -9,6 +9,7 @@
 
 .row {
   justify-content: center;
+  display: flex;
 }
 
 .TopBar {
@@ -26,4 +27,16 @@
 
 .gratitudeButton {
   margin: 50px 0;
+}
+
+.PromptText {
+  margin: 50px 0;
+  font-family: Georgia, sans-serif;
+  font-size: 25px;
+}
+
+.gratitudeForm {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
 }
