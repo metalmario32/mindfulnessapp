@@ -1,29 +1,14 @@
-import { React, useState } from "react";
-import { Button } from "reactstrap";
+import React from "react";
+// import { Button } from "reactstrap";
 import "../App.css";
+import AddPost from "./AddPost";
+import { useState } from "react";
 
-export default function PostForm({ addEntry }) {
-  const [textValue, setTextValue] = useState("");
+export default function Gratitudejournal() {
+  const [posts, setPosts] = useState([]);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    addEntry({ textValue });
-    setTextValue("");
+  const addPost = (newPost) => {
+    setPosts([...posts, newPost]);
   };
-
-  return (
-    <form className="gratitudeForm">
-      <textarea
-        type="text"
-        as='textarea'
-        rows="12"
-        className="form-control journalTextArea"
-        value={textValue}
-        onChange={(e) => setTextValue(e.target.value)}
-      />
-      <Button style={{ background: "blue" }} onClick={handleSubmit}>
-        Post
-      </Button>
-    </form>
-  );
+  return <AddPost addPost={addPost} />;
 }
